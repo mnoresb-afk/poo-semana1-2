@@ -32,27 +32,27 @@ public class Estudiante {
     public String getCodigo() {
         return codigo;
     }
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setCodigo(String _codigo) {
+        this.codigo = _codigo;
     }
     public String getNombres() {
         return nombres;
     }
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setNombres(String _nombres) {
+        this.nombres = _nombres;
     }
     public String getApellidos() {
         return apellidos;
     }
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellidos(String _apellidos) {
+        this.apellidos = _apellidos;
     }
     public String getDni() {
         return dni;
     }
-    public void setDni(String dni) { 
-        if(dni.length() == 8){ // DNI VALIDO
-            this.dni = dni; 
+    public void setDni(String _dni) { 
+        if(_dni.length() == 8){ // DNI VALIDO
+            this.dni = _dni; 
         }else{
             System.out.println("Verifique que el DNI tenga 8 números");
         }  
@@ -60,16 +60,16 @@ public class Estudiante {
     public String getCarrera() {
         return carrera;
     }
-    public void setCarrera(String carrera) {
-        this.carrera = carrera;
+    public void setCarrera(String _carrera) {
+        this.carrera = _carrera;
     }
     public int getEdad() { 
         return edad;
     }
-    public void setEdad(int edad) {
+    public void setEdad(int _edad) {
         // validar rango de edad valido
-        if(edad >= 0 && edad <= 80){
-            this.edad = edad;    
+        if(_edad >= 0 && _edad <= 80){
+            this.edad = _edad;    
         }else{
             System.out.println("Rango de edad inválido");
         }
